@@ -1,5 +1,5 @@
 #LYRIC SEARCH APP
-https://gorgeous-gingersnap-7ce469.netlify.app/
+https://sparkly-rolypoly-653f7a.netlify.app/
 
 SEARCH THE LYRICS OF YOUR FAVORITE SONGS ON THIS SITE.
 USING THE FREE VERSION OF THE MUSIXMATCH API :(

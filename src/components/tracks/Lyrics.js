@@ -13,13 +13,13 @@ export default function Lyrics() {
   useEffect(() => {
     axios
       .get(
-        `https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=${id}&apikey=${process.env.REACT_APP_MM_KEY}`
+        `https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=${id}&apikey=${process.env.REACT_APP_MM_KEY}`
       )
       .then((res) => {
         // console.log(res.data);
         setLyrics(res.data.message.body.lyrics);
         return axios.get(
-          `https://api.musixmatch.com/ws/1.1/track.get?track_id=${id}&apikey=${process.env.REACT_APP_MM_KEY}`
+          `https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.get?track_id=${id}&apikey=${process.env.REACT_APP_MM_KEY}`
         );
       })
       .then((res) => {
